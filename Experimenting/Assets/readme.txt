@@ -1,0 +1,1 @@
+new assets default to 100 pixels per unity unit
