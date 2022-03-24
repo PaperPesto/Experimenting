@@ -9,7 +9,6 @@ public class Driver : MonoBehaviour
     [SerializeField] public float slowSpeed = 5f;
     [SerializeField] public float boostSpeed = 15f;
 
-    // Update is called once per frame
     void Update()
     {
         float steerAmount = Input.GetAxis("Horizontal") * steerSpeed * Time.deltaTime;
