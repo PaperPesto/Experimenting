@@ -18,6 +18,11 @@ public class Wheel : MonoBehaviour
         wcol.motorTorque = powerinput;
     }
 
+    public void Decelerate(float breakinput)
+    {
+        wcol.brakeTorque = breakinput;
+    }
+
     public void UpdatePosition()
     {
         Vector3 pos = transform.position;

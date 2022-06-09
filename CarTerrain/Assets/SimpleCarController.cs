@@ -16,6 +16,7 @@ public class SimpleCarController : MonoBehaviour
     public List<AxleInfo> axleInfos;
     public float maxMotorTorque;
     public float maxSteeringAngle;
+    public Vector3 centerOfMass = new Vector3();
 
     // finds the corresponding visual wheel
     // correctly applies the transform
@@ -40,6 +41,7 @@ public class SimpleCarController : MonoBehaviour
     {
         float motor = maxMotorTorque * Input.GetAxis("Vertical");
         float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
+        GetComponent<Rigidbody>().centerOfMass = centerOfMass;
 
         foreach (AxleInfo axleInfo in axleInfos)
         {

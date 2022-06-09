@@ -324,6 +324,7 @@ MonoBehaviour:
     steering: 0
   maxMotorTorque: 400
   maxSteeringAngle: 30
+  centerOfMass: {x: 0, y: 0, z: 0}
 --- !u!1 &8383717176169920717
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 122009042878792792, guid: 020ade40600cfcb4183eb57242d162c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.007
+      value: 0.0027
       objectReference: {fileID: 0}
     - target: {fileID: 122009042878792792, guid: 020ade40600cfcb4183eb57242d162c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -636,6 +637,10 @@ PrefabInstance:
     - target: {fileID: 1225904148409411818, guid: 020ade40600cfcb4183eb57242d162c6, type: 3}
       propertyPath: m_Name
       value: Cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 7250806706303393088, guid: 020ade40600cfcb4183eb57242d162c6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 020ade40600cfcb4183eb57242d162c6, type: 3}
